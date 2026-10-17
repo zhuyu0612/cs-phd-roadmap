@@ -82,3 +82,31 @@
 | 剑桥雅思真题 4-19 | 雅思备考 |
 | BBC 6 Minute English | 听力精听 |
 | The Economist | 阅读 |
+
+## 八、AI 助手订阅方案（2026-10 核价，按阶段启用）
+
+> 原则：先免费后付费；国内能直付的不折腾外币；每个阶段只加一个新订阅。
+
+### P0 · 现在就配（月成本 ≈ 0~30 元）
+
+| 工具 | 价格 | 用途 | 办理方式 |
+|---|---|---|---|
+| Gemini CLI 免费层 | ¥0 | D2L/PyTorch 答疑，1M 上下文吞整个 notebook | Google 账号 + 终端 npm 安装，详见 README/订阅指南 |
+| GitHub Student Pack | ¥0 | 免费 Copilot Pro + 一堆云额度 | 东华 edu 邮箱申请 education.github.com/pack |
+| DeepSeek API 按量 | 充 ¥20 起步 | 代码答疑备用，非高峰 1 元/M input | platform.deepseek.com 支付宝充值 |
+| 智谱 GLM Coding Lite | ¥118/月（暂缓） | Claude Code 国内平替 | 跑 TSLib 大仓库时再开 |
+
+### P1 · 2027 年初（Transformer 阶段）再评估
+
+| 工具 | 价格 | 触发条件 |
+|---|---|---|
+| Claude Pro | $20/月（年付合 $17） | 开始写英文小论文 / 重度 Claude Code 使用 |
+| Kimi 会员 / 豆包 | ¥49 / ¥68 | 不想折腾外币支付时的论文阅读替代 |
+
+### 不订
+
+- ChatGPT Plus + Perplexity 同时订（功能重叠）
+- Cursor 订阅（学生 Copilot 免费够用）
+- Claude Max / $100+ 档（个人学习用不到）
+
+> ⚠️ 价格快照 2026-10，订阅前重看官方定价页；海外订阅记得关自动续费。
