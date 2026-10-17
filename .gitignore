@@ -1,0 +1,71 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Anaconda / conda
+.conda/
+conda-meta/
+*.conda
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.env
+
+# PyTorch
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+wandb/
+runs/
+lightning_logs/
+
+# Data (太大或涉密的数据不要提交)
+data/
+datasets/
+*.csv
+*.npy
+*.npz
+*.h5
+*.hdf5
+!sample*.csv
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
