@@ -34,16 +34,15 @@
 | awesome-llm-time-series | https://github.com/lihuirui/awesome-llm-time-series-foundation-models-survey | 综述仓库，2026-09 更新 |
 | 时序论文脉络 | DLinear/PatchTST→iTransformer→一种基础模型 | 按任务选择，不要求按年代读完 |
 
-## 四、AI4Science / 材料预测
+## 四、计算机研究主线
 
-| 资源 | 链接 | 用途 |
+| 优先级 | 方法方向 | 场景与选题条件 |
 |---|---|---|
-| DeePMD-kit | https://github.com/deepmodeling/deePMD-kit | 深度势能分子动力学 |
-| DPA 大原子模型 | https://github.com/deepmodeling/dpa | 通用原子模型 |
-| Uni-Mol | https://github.com/deepmodeling/uni-mol | 3D 分子表示学习 |
-| Bohrium 玻尔 | https://bohrium.dp.tech | 深势科技一站式 AI4S 平台 |
-| Materials Project | https://materialsproject.org | 材料数据库 |
-| DeepModeling 社区 | https://github.com/deepmodeling | 鄂维南牵头 |
+| P0 | 表格/时序学习与跨场景泛化 | 有批次、设备、时间等可核验分组及质量标签，先做可信基线 |
+| P1 | 少标签适配与可靠评估 | 在主任务成立后只选一个核心问题，不同时叠加全部方向 |
+| P1 | 工业视觉异常/缺陷检测 | 仅在实际数据与指导匹配时作为替代主线 |
+
+2026-10-20范围调整：取消分子、原子、材料模拟及对应工具链，不作为备选方向。应用场景不替代计算机方法贡献。
 
 ## 五、工具链
 
