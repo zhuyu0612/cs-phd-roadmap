@@ -4,3 +4,6 @@
 - Skills配置：paper-lookup、scientific-critical-thinking、citation-management，来源和固定版本见notes/paper-skills.md。
 - 未完成：主题检索、全文精读、D2L 2.2剩余内容与首轮实验；不计为完成成果。
 - 下一步P0（10月27日前）：完成2.2并解释输出，完成第一次小规模检索与筛选。
+
+- 后续：获取DLinear arXiv v3 PDF，准备中文导读和45分钟阅读法，新增真实书目矩阵与来源核验记录。用户阅读、复述与模型复现仍待完成。
+- 实际验证：Zotero的01-Paper-Reading分类中已导入1篇文献及PDF；中文导读保存成功，PDF第4页原文高亮可见。未调用付费API。

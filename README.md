@@ -36,6 +36,9 @@
 
 ## 论文工作流
 
+当前推荐：[45分钟小步阅读法](notes/paper-reading-workflow.md)；第一篇从[DLinear导读](notes/20261020-dlinear-guided.md)开始。Zotero保存原文与批注，当前对话逐段辅导，仓库记录自己的理解。
+
+
 [Skills与使用指令](notes/paper-skills.md) → [检索记录](notes/paper-search-log.md) → [文献矩阵](notes/literature-matrix.md) → [精读模板](notes/paper-note-template.md) → 最小复现。
 
 先筛选，再精读。每周目标为筛选3—5篇、精读1篇；基础阶段至少每两周完成1篇。原文未拿到时只能记“摘要初筛”，不能称为全文精读。
