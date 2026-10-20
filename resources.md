@@ -27,12 +27,12 @@
 
 | 资源 | 链接 | 用途 |
 |---|---|---|
-| Time-Series-Library (TSLib) | https://github.com/thuml/Time-Series-Library | 浙大，跑通所有 baseline |
+| Time-Series-Library (TSLib) | https://github.com/thuml/Time-Series-Library | 清华 THUML；选择匹配任务的基线，留意2026维护公告 |
 | Chronos | https://github.com/amazon-science/chronos-forecasting | Amazon 时序基础模型 |
 | TimesFM | https://github.com/google-research/timesfm | Google 时序基础模型 |
 | Moirai (uni2ts) | https://github.com/SalesforceAIResearch/uni2ts | Salesforce 通用时序 |
 | awesome-llm-time-series | https://github.com/lihuirui/awesome-llm-time-series-foundation-models-survey | 综述仓库，2026-09 更新 |
-| 时序论文脉络 | Informer→Autoformer→FEDformer→PatchTST→iTransformer | 按顺序精读 |
+| 时序论文脉络 | DLinear/PatchTST→iTransformer→一种基础模型 | 按任务选择，不要求按年代读完 |
 
 ## 四、AI4Science / 材料预测
 
@@ -56,14 +56,14 @@
 | Connected Papers | https://connectedpapers.com | 论文关系图谱 |
 | Papers with Code | https://paperswithcode.com | 论文+代码+SOTA |
 
-## 六、985 CS 博士招生（2026 参考，每年更新）
+## 六、高校研究方向参考入口（申请策略另存本地）
 
 | 院校 | 学院 | 链接 |
 |---|---|---|
 | 清华 | 人工智能学院 | https://collegeai.tsinghua.edu.cn |
 | 北大 | 科学智能学院 | https://sai.pku.edu.cn |
 | 上交 | 人工智能学院 | https://ai.sjtu.edu.cn |
-| 浙大 | 计算机学院（TSLib 团队） | http://cs.zju.edu.cn |
+| 浙大 | 计算机学院 | http://cs.zju.edu.cn |
 | 中科大 | 计算机学院 | http://scs.ustc.edu.cn |
 | 同济 | 人工智能学院 | https://cai.tongji.edu.cn |
 | 华科 | 计算机学院 | http://cs.hust.edu.cn |
@@ -71,7 +71,7 @@
 | 哈工大 | 计算学部 | http://cs.hit.edu.cn |
 | 南大 | 计算机学院（LAMDA） | http://cs.nju.edu.cn |
 
-> ⚠️ 招生简章每年 9-12 月发布，每月 1 号刷一次目标校页面，把英语/论文/出身门槛抄进 Notion。
+> 以下为研究信息入口，具体招生时间和要求以各校各项目当年官方文件为准。
 
 ## 七、英语
 
@@ -110,3 +110,9 @@
 - Claude Max / $100+ 档（个人学习用不到）
 
 > ⚠️ 价格快照 2026-10，订阅前重看官方定价页；海外订阅记得关自动续费。
+
+## 九、论文检索与阅读 Skills（2026-10-20）
+
+见[安装版本与指令](notes/paper-skills.md)。首选paper-lookup找论文、scientific-critical-thinking辅助批判性阅读、citation-management核验引用。
+
+优先使用arXiv、论文正式发表页、作者项目页与官方代码。区分预印本、正式发表与代码版本。第三方工具价格、额度及订阅建议均为历史记录，实际开通前重新核实。

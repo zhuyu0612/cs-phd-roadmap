@@ -1,102 +1,59 @@
-# CS PhD Roadmap · 时序大模型 + AI4S 方向
+# 工业数据建模学习记录
 
-> 东华大学 材料与化工专硕 → 目标 985 计算机博士
-> 方向：时序预测大模型 / AI for Science 材料性能预测
-> 维护者：祝宇 · 始于 2026-10
+维护者：祝宇。始于2026-10；路线更新：2026-10-20。
 
-这个仓库记录我从"材化专硕"跨到"985 CS 博士"的完整学习路径：路线图、论文精读笔记、复现代码、每周日志。
+主线：基础代码 → 数据与评估 → 简单基线 → 匹配任务的深度模型 → 可复现研究。
+本仓库只记录公开学习产出，不保存个人申请策略或未授权数据。计划日期是自定目标，完成状态以代码和实验记录为准。
 
----
+## 当前优先级
 
-## 🎯 总目标
+- [ ] **P0 · 10月27日前**：完成 D2L 2.2 缺失值、one-hot、转 tensor；解释输出的列、dtype与形状。
+- [ ] **P0 · 11月15日前**：明确实际任务、输入输出、标签产生时间与数据划分单位。
+- [ ] **P0 · 11月17日前**：按[四周论文计划](notes/paper-reading-plan.md)完成检索记录和2份精读笔记。
+- [ ] **P0 · 11月30日前**：完成一个小数据集上的朴素/线性基线、误差分析与复现说明。
+- [ ] **P0 · 每日**：保持英语学习，记录时间与错因。
 
-- **终点**：985 高校计算机博士（申请考核制），方向 = 时序预测大模型 + AI4S 材料/工业性能预测
-- **硬通货**：研二上（2027-12 前）投出第一篇英文一作小论文（CCF-B 会议 / SCI 二区）
-- **英语**：CET-4 425（2026-12）→ CET-6 425（2027-06）→ 雅思 6.0+（2027 暑假）
-- **大论文**：《基于深度学习的 XXX 性能预测》——第 3/4 章拆成小论文，一鱼两吃
+## 按产出推进的路线
 
----
+| 优先级 | 阶段与期限 | 学习重点 | 验收产物 |
+|---|---|---|---|
+| P0 | 2026-10—12：基础与首轮实验 | D2L预处理、自动微分、线性回归、MLP；训练/验证/测试；英语 | 可解释的训练循环、第一份基线报告 |
+| P1 | 2027-01—03：模型与论文 | Attention/QKV、mask、优化；按需补数学；一个任务模型 | 复现报告、10篇文献矩阵、一页研究问题 |
+| P1 | 2027-04—06：验证方向 | 任务匹配时比较一个基础模型；先零样本再决定微调 | 公平对比表与继续/调整判断 |
+| P1 | 2027-07—09：主实验 | 一个主要假设，消融、跨组泛化、误差分析 | 主结果、消融、可复现脚本 |
+| P1 | 2027-10—12：成果整理 | 完整初稿、内部审阅、按实际征稿时间投稿 | 论文稿与复现包；不预设录用结果 |
+| P1 | 2028-01—06：研究整合 | 修稿、学位论文、研究汇报 | 可复现成果、研究报告与论文初稿 |
 
-## 📅 四阶段路线图
+## 数据决定分支
 
-### 阶段 1 · 基础重建（2026-10 ~ 2026-12）
+- 每批一行参数与标量标签：表格回归，先比较均值、岭回归、树模型。
+- 连续序列预测未来数值：时序预测，先朴素法、线性/DLinear，再比较更复杂模型。
+- 一段过程序列预测终检标量：序列到标量回归，不能直接等同于未来序列预测。
+- 图像与疵点标注：转入视觉任务分支，届时再补对应知识。
+- 分子结构或原子数据：有领域指导与数据后再进入分子/原子模型。
 
-- [ ] 李沐《动手学深度学习》PyTorch 版 Ch1-8（B站"跟李沐学AI" + d2l.ai）
-- [ ] PyTorch 熟练：手写 CNN/RNN，训 CIFAR-10 到 85%
-- [ ] 并行数学线：3Blue1Brown《线性代数的本质》《微积分的本质》
-- [ ] Linux + Git + SSH + tmux 基础（能用实验室服务器）
-- [ ] LaTeX（Overleaf）入门
-- [ ] CET-4 冲 425（墨墨背单词 + 真题，12 月考试）
+不要求先学完整CNN、手写完整GPT或跑遍所有模型。TSLib用于学习与基线参考，最新模型评估应结合官方代码与当前基准。
 
-### 阶段 2 · Transformer 核心（2027-01 ~ 2027-03）
+## 论文工作流
 
-- [ ] 《The Illustrated Transformer》精读
-- [ ] Karpathy "Let's build GPT from scratch" 手写 nanoGPT
-- [ ] 精读《Attention is All You Need》
-- [ ] Hugging Face Transformers / PEFT / Accelerate 官方教程
-- [ ] 时序入门：Informer → Autoformer → PatchTST → iTransformer 论文精读
-- [ ] CET-6 词汇打底
+[Skills与使用指令](notes/paper-skills.md) → [检索记录](notes/paper-search-log.md) → [文献矩阵](notes/literature-matrix.md) → [精读模板](notes/paper-note-template.md) → 最小复现。
 
-### 阶段 3 · 方向专项（2027-04 ~ 2027-09）
+先筛选，再精读。每周目标为筛选3—5篇、精读1篇；基础阶段至少每两周完成1篇。原文未拿到时只能记“摘要初筛”，不能称为全文精读。
 
-- [ ] 跑通 Time-Series-Library（TSLib）所有 baseline
-- [ ] 微调时序基础模型：Chronos / TimesFM / Moirai（至少 1 个）
-- [ ] AI4S 选修：DeePMD-kit / DPA / Uni-Mol
-- [ ] Weights & Biases 实验跟踪
-- [ ] 开题报告（LaTeX）+ 开题答辩
-- [ ] 主实验：对比 + 消融
-- [ ] CET-6 冲 425（6 月考试）
+## 实验与提交规范
 
-### 阶段 4 · 科研产出（2027-09 ~ 2028-06）
+- 依据时间、批次、设备等相关性划分数据；仅在训练集拟合预处理参数。
+- 记录数据版本、代码提交、依赖、种子、指标与失败案例。
+- 每小节一个Notebook，先Markdown说明，再代码；重跑保存后提交。
+- 日常：检查状态 → 精确暂存文件 → 写清提交说明 → 推送；使用code:/notes:/log:前缀。
+- 数据、权重、凭据、个人策略与未授权论文PDF不上传。
 
-- [ ] 小论文 A 写作 + 投稿
-- [ ] 小论文 B（系统/应用）投稿
-- [ ] 大论文初稿（整合小论文 A+B）
-- [ ] 联系博导（2028-03 起）+ 研究计划书（5000 字）
-- [ ] 雅思首考 6.0+
+## 已知进度
 
----
+| 日期 | 状态 | 记录 |
+|---|---|---|
+| 2026-10-17 | 已完成 | SSH/Git与Notebook工具链；D2L 2.1 |
+| 2026-10-17 | 进行中 | D2L 2.2 Notebook已初始化，剩余学习待验证 |
+| 2026-10-20 | 计划更新 | 建立论文工作流；不代表已完成检索、精读或实验 |
 
-## 📁 仓库结构
-
-```
-cs-phd-roadmap/
-├── README.md              ← 你在这里（总路线图）
-├── notes/                 ← 论文精读笔记（每篇一个 .md）
-│   └── paper-note-template.md
-├── code/                  ← 复现的项目（每个项目一个子目录）
-├── log/                   ← 每周日志
-│   └── week-template.md
-└── resources.md           ← 资源链接汇总
-```
-
----
-
-## 🔗 核心资源
-
-### 时序大模型
-- Time-Series-Library (TSLib): https://github.com/thuml/Time-Series-Library
-- Chronos: https://github.com/amazon-science/chronos-forecasting
-- TimesFM: https://github.com/google-research/timesfm
-- Moirai (uni2ts): https://github.com/SalesforceAIResearch/uni2ts
-
-### AI4Science
-- DeePMD-kit: https://github.com/deepmodeling/deePMD-kit
-- Uni-Mol: https://github.com/deepmodeling/uni-mol
-- Materials Project: https://materialsproject.org
-
-### 学习
-- 李沐《动手学深度学习》: https://d2l.ai （B站"跟李沐学AI"）
-- Karpathy nanoGPT: https://github.com/karpathy/nanoGPT
-- The Illustrated Transformer: https://jalammar.github.io/illustrated-transformer
-- 3Blue1Brown 线代本质: B站搜索
-
----
-
-## 📈 进度日志
-
-| 周次 | 日期 | 完成 | 卡点 | 下周 |
-|---|---|---|---|---|
-| W1 | 2026-10-17 ~ | 配 SSH / 建 GitHub 仓库 / 首次 push | | |
-
-（每周日更新，详细见 `log/`）
+其他资源见[resources.md](resources.md)，周复盘见[log/](log/)。
