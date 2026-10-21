@@ -61,6 +61,9 @@ datasets/
 *.swo
 .DS_Store
 
+# Local-only AI handoff: private course notes, personal strategy and conversations
+ai-workflow/03-progress/本地私有/
+
 # LaTeX
 *.aux
 *.log
