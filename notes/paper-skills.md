@@ -1,12 +1,13 @@
 # 找论文、读论文的 Skills
 
-配置日期：2026-10-20。来源：[K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills)，本次查询约5.3万星，星数属于整个仓库。
+更新：2026-10-21。主辅导者改为Codex，Zotero负责原文与批注。来源：[K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills)，本次GitHub API为53,384星，星数属于整个仓库。
 固定版本：`593377bb048752abb0152deab9fbb1083a6087df`。安装位置在本机用户Skills目录，仓库记录方法与版本，不复制第三方源码。
 
 | 优先级 | Skill | 用途与边界 |
 |---|---|---|
 | P0 | [paper-lookup](https://github.com/K-Dense-AI/scientific-agent-skills/tree/593377bb048752abb0152deab9fbb1083a6087df/skills/paper-lookup) | 检索文献和原始标识；不是全文阅读器 |
 | P0 | [scientific-critical-thinking](https://github.com/K-Dense-AI/scientific-agent-skills/tree/593377bb048752abb0152deab9fbb1083a6087df/skills/scientific-critical-thinking) | 检查论证、方法、证据与局限；中文逐段辅导由下方阅读指令约束 |
+| P1 | [literature-review](https://github.com/K-Dense-AI/scientific-agent-skills/tree/593377bb048752abb0152deab9fbb1083a6087df/skills/literature-review) | 本次新增；积累3—5篇后比较证据与研究问题，不对单篇强行跑系统综述 |
 | P1 | [citation-management](https://github.com/K-Dense-AI/scientific-agent-skills/tree/593377bb048752abb0152deab9fbb1083a6087df/skills/citation-management) | 核验元信息、去重和BibTeX；不能代替检查引用是否支持正文论点 |
 
 ## 检索指令
@@ -28,3 +29,7 @@
 - 新安装Skills从下一轮对话可用。安装不代表数据库检索和PDF读取已通过测试。
 - 成功标志：能追溯原始论文、区分摘要/全文、用自己的话解释方法，并明确不知道的内容。
 - 首次检索时先做小规模验证，不发送公司或实验室未公开数据到文献服务。
+
+## 本周入口
+
+[两篇入门阅读与90分钟试行安排](reading-starter-20261021.md)。现有前三项保留，本次只新增literature-review；DeepPaperNote及其术语组件因当前基础与附加依赖暂不安装。星数不能代替适配与实际理解。
